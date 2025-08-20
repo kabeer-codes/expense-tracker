@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Filter</title>
+    <link rel="icon" href="assets/images/logo.svg">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <nav class="flex justify-between items-center px-[40px] py-[18px] border-b border-[#E5E8EB]">
+        <div class="flex items-center gap-3">
+            <img src="assets/images/logo.svg" alt="Logo" class="w-[28px] h-[28px]">
+            <h1 class="font-bold text-[28px] leading-[23px] text-[#0D141C]">FinTrack</h1>
+        </div>
+        <div class="flex items-center gap-[36px]">
+            <a href="#" class="font-medium text-[18px] leading-[21px] text-[#0D141C] 
+                  hover:text-blue-600 transition-colors ease-in-out duration-200">
+                Dashboard
+            </a>
+            <a href="#" class="font-medium text-[18px] leading-[21px] text-[#0D141C] 
+                  hover:text-blue-600 transition-colors ease-in-out duration-200">
+                Expenses
+            </a>
+            <a href="#" class="font-medium text-[18px] leading-[21px] text-[#0D141C] 
+                  hover:text-blue-600 transition-colors ease-in-out duration-200">
+                Budget
+            </a>
+            <a href="#" class="font-medium text-[18px] leading-[21px] text-[#0D141C] 
+                  hover:text-blue-600 transition-colors ease-in-out duration-200">
+                Reports
+            </a>
+            <button class="p-[10px] bg-[#E8EDF5] rounded-[8px] cursor-pointer hover:bg-[#d2dae7] duration-300"><img
+                    src="assets/images/notification.svg" alt="notification" class="w-[20px]"></button>
+
+            <button class="cursor-pointer"><img src="assets/images/profile-2.png" alt="profile"
+                    class="w-[40px] h-[40px]"></button>
+        </div>
+    </nav>
+    <div class="container mx-auto max-w-[1440px] w-full  mt-[20px]">
+        <div class="flex justify-between items-center w-full">
+            <h1 class="font-bold text-[32px] leading-[40px] text-[#0D141C]">Expenses</h1>
+            <button
+                class="px-[16px] py-[6px] bg-[#E8EDF5] rounded-[8px] cursor-pointer hover:bg-gray-300 ease-in-out duration-300">Add
+                Expense</button>
+        </div>
+        <div
+            class="flex items-center gap-3 w-full mt-[12px] my-[12px] py-[12px] px-[16px] bg-[#E8EDF5] rounded-xl mt-[28px]">
+            <img src="assets/images/search-icon.svg" alt="search icon" class="w-[24px] h-[24px]">
+            <input type="text" placeholder="Search expenses"
+                class="font-regular text-[16px] leading-[24px] text-[#4A709C] outline-none w-full">
+        </div>
+
+        <h1 class="text-[18px] text-[#0D141C] font-bold leading-[23px] pt-[16px] pb-[8px]">
+            Filters
+        </h1>
+
+
+        <div class="flex items-center gap-4">
+            <div class="flex flex-col space-y-2 mt-[20px]">
+                <select id="category" name="category" class="w-[130px] px-3 py-[10px]  border border-gray-300 rounded-xl bg-white text-gray-700 shadow-md
+           focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 cursor-pointer">
+                    <option value="">Category</option>
+                    <option value="food">Food</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="shopping">Shopping</option>
+                </select>
+            </div>
+            <div class="flex flex-col space-y-2 mt-[20px]">
+                  <select id="category" name="category" class="w-[130px] px-3 py-[10px]  border border-gray-300 rounded-xl bg-white text-gray-700 shadow-md
+                 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 cursor-pointer">
+                    <option value="">Category</option>
+                    <option value="food">Food</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="shopping">Shopping</option>
+                </select>
+            </div>
+            <div class="flex flex-col space-y-2 mt-[20px]">
+                  <select id="category" name="category" class="w-[130px] px-3 py-[10px]  border border-gray-300 rounded-xl bg-white text-gray-700 shadow-md
+                 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 cursor-pointer">
+                    <option value="">Category</option>
+                    <option value="food">Food</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="shopping">Shopping</option>
+                </select>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

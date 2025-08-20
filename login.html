@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Expense Tracker</title>
+    <link rel="icon" href="assets/images/logo.svg">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="border-b border-[#CFD9E8] ">
+        <div class="flex items-center gap-4 my-[12px] mx-[40px]">
+            <img src="assets/images/logo.svg" alt="Logo" class="w-8">
+            <h1 class="font-bold text-[24px] text-[#0D141C] leading-[23px]">ExpenseTracker</h1>
+        </div>
+    </nav>
+    <div class="container max-w-[1440px] w-full mx-auto">
+        <div class="flex flex-col ">
+            <h1 class="text-center font-bold text-[36px] leading-[35px] text-[#0D141C] mt-[60px]">Welcome back</h1>
+            <div class="flex flex-col gap-6 mt-16">
+
+                <div class="flex flex-col gap-2 max-w-[440px]">
+                    <label for="text" class="font-medium text-[16px] leading-[24px] text-[#0D141C]">Username or
+                        Email</label>
+                    <input type="text" placeholder="Enter your username or email"
+                        class="p-[16px] border border-[#CFD9E8] rounded-xl text-[#4A709C]">
+                </div>
+                <div class="flex flex-col gap-2 max-w-[440px]">
+                    <label for="email" class="font-medium text-[16px] leading-[24px] text-[#0D141C]">Password</label>
+                    <input type="password" placeholder="Enter your password"
+                        class="p-[16px] border border-[#CFD9E8] rounded-xl text-[#4A709C]">
+                </div>
+                <a href="#" class="font-regular text-[14px] leading-[21px] text-[#4A709C]">Forgot password?</a>
+                <div class="flex flex-col items-center gap-9 max-w-[440px]">
+                    <button
+                        class="w-full p-[16px] border rounded-xl cursor-pointer hover:bg-[#0D78F2] hover:text-[#F7FAFC] duration-300 ">Log
+                        In</button>
+                    <span class="font-regular text-[14px] leading-[21px] text-[#4A709C]">Don't have an account? <a
+                            href="#">Sign up</a> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Categories</title>
+    <link rel="icon" href="assets/images/logo.svg">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <nav class="flex justify-between items-center px-[40px] py-[18px] border-b border-[#E5E8EB]">
+        <div class="flex items-center gap-3">
+            <img src="assets/images/logo.svg" alt="Logo" class="w-[28px] h-[28px]">
+            <h1 class="font-bold text-[28px] leading-[23px] text-[#0D141C]">Financio</h1>
+        </div>
+        <div class="flex items-center gap-[36px]">
+            <a href="#" class="font-medium text-[18px] leading-[21px] text-[#0D141C] 
+                  hover:text-blue-600 transition-colors ease-in-out duration-200">
+                Dashboard
+            </a>
+            <a href="#" class="font-medium text-[18px] leading-[21px] text-[#0D141C] 
+                  hover:text-blue-600 transition-colors ease-in-out duration-200">
+                Expenses
+            </a>
+            <a href="#" class="font-medium text-[18px] leading-[21px] text-[#0D141C] 
+                  hover:text-blue-600 transition-colors ease-in-out duration-200">
+                Income
+            </a>
+            <a href="#" class="font-medium text-[18px] leading-[21px] text-[#0D141C] 
+                  hover:text-blue-600 transition-colors ease-in-out duration-200">
+                Categories
+            </a>
+            <a href="#" class="font-medium text-[18px] leading-[21px] text-[#0D141C] 
+                  hover:text-blue-600 transition-colors ease-in-out duration-200">
+                Reports
+            </a>
+            <button class="p-[10px] bg-[#E8EDF5] rounded-[8px] cursor-pointer hover:bg-[#d2dae7] duration-300"><img
+                    src="assets/images/notification.svg" alt="notification" class="w-[20px]"></button>
+
+            <button class="cursor-pointer"><img src="assets/images/profile.png" alt="profile"
+                    class="w-[40px] h-[40px]"></button>
+        </div>
+    </nav>
+    <div class="container max-w-[1440px] w-full mx-auto mt-[36px]">
+        <div class="flex flex-col gap-[12px]">
+            <h1 class="font-bold text-[32px] leading-[40px] text-[#0D0F1C]">Categories</h1>
+            <h4 class="font-regular text-[14px] leading-[21px] text-[#47579E]">Manage your expense categories</h4>
+        </div>
+        <h1 class="font-bold text-[18px] leading-[23px] text-[#0D0F1C] my-8">Add New Category</h1>
+        <div class="flex flex-col gap-9  max-w-[448px] w-full">
+            <div class="flex flex-col gap-3">
+                <label for="text" class="font-medium text-[16px] leading-[24px] text-[#0D0F1C]">Category Name</label>
+                <input type="text" placeholder="Enter category name"
+                    class="font-regular text-[16px] leading-[24px] text-[#47579E] border border-[#CFD1E8] p-[15px] rounded-xl">
+            </div>
+            <button class="bg-[#617AFA] p-[16px] rounded-xl text-[14px] font-bold leading-[21px] text-left max-w-[128px] cursor-pointer 
+                        text-white hover:bg-[#4a63d9] hover:text-[#F7FAFC] ease-in-out duration-300">
+                Add Category
+            </button>
+        </div>
+
+        <div class="flex flex-col gap-[16px] max-w-[960px] w-full mt-[32px]">
+            <h1 class="text-[18px] font-bold leading-[23px] text-[#0D0F1C]">All Categories</h1>
+
+
+            <table>
+                <thead>
+                    <tr class="border border-[#E5E8EB]  text-left">
+                        <th class="font-medium text-[14px] text-[#0D0F1C] px-[16px] py-[12px] leading-[21px]">Category
+                            Name</th>
+                        <th class="font-medium text-[14px] text-[#47579E] leading-[21px]">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="border border-[#E5E8EB] text-left">
+                        <td class="font-regular text-[14px] leading-[21px] text-[#0D0F1C] px-[16px] py-[12px]">Groceries
+                        </td>
+
+                        <td>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer">Edit</button>
+                            <span>|</span>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer hover:text">Delete</button>
+                        </td>
+
+
+                    </tr>
+                    <tr class="border border-[#E5E8EB] text-left">
+                        <td class="font-regular text-[14px] leading-[21px] text-[#0D0F1C] px-[16px] py-[12px]">Utilities
+                        </td>
+                        <td>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer">Edit</button>
+                            <span>|</span>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer hover:text">Delete</button>
+                        </td>
+                    </tr>
+
+
+                    <tr class="border border-[#E5E8EB] text-left">
+                        <td class="font-regular text-[14px] leading-[21px] text-[#0D0F1C] px-[16px] py-[12px]">Rent
+                        </td>
+                        <td>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer">Edit</button>
+                            <span>|</span>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer hover:text">Delete</button>
+                        </td>
+                    </tr>
+
+
+                    <tr class="border border-[#E5E8EB] text-left">
+                        <td class="font-regular text-[14px] leading-[21px] text-[#0D0F1C] px-[16px] py-[12px]">
+                            Transportation
+                        </td>
+                        <td>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer">Edit</button>
+                            <span>|</span>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer hover:text">Delete</button>
+                        </td>
+                    </tr>
+
+
+                    <tr class="border border-[#E5E8EB] text-left">
+                        <td class="font-regular text-[14px] leading-[21px] text-[#0D0F1C] px-[16px] py-[12px]">
+                            Entertainment
+                        </td>
+                        <td>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer">Edit</button>
+                            <span>|</span>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer hover:text">Delete</button>
+                        </td>
+                    </tr>
+
+
+
+
+
+
+
+
+                </tbody>
+
+
+
+
+            </table>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
