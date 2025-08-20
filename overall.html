@@ -56,12 +56,11 @@
         <h1 class="text-[18px] text-[#0D141C] font-bold leading-[23px] pt-[16px] pb-[8px]">
             Filters
         </h1>
-
-
-        <div class="flex items-center gap-4">
-            <div class="flex flex-col space-y-2 mt-[20px]">
-                <select id="category" name="category" class="w-[130px] px-3 py-[10px]  border border-gray-300 rounded-xl bg-white text-gray-700 shadow-md
-           focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 cursor-pointer">
+        <div class="flex items-center gap-4 mt-[20px]">
+            <!-- Dropdown Wrapper -->
+            <div class="relative w-[160px]">
+                <select id="category1" name="category" class="appearance-none w-full px-3 py-[10px] border border-gray-300 rounded-xl bg-white text-gray-700 shadow-md
+      focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 cursor-pointer">
                     <option value="">Category</option>
                     <option value="food">Food</option>
                     <option value="transportation">Transportation</option>
@@ -69,31 +68,141 @@
                     <option value="utilities">Utilities</option>
                     <option value="shopping">Shopping</option>
                 </select>
+                <img src="assets/images/dropdwon.svg" alt="dropdown arrow"
+                    class="absolute right-1 top-1/2 -translate-y-1/2 pointer-events-none" />
             </div>
-            <div class="flex flex-col space-y-2 mt-[20px]">
-                  <select id="category" name="category" class="w-[130px] px-3 py-[10px]  border border-gray-300 rounded-xl bg-white text-gray-700 shadow-md
-                 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 cursor-pointer">
-                    <option value="">Category</option>
-                    <option value="food">Food</option>
-                    <option value="transportation">Transportation</option>
-                    <option value="entertainment">Entertainment</option>
-                    <option value="utilities">Utilities</option>
-                    <option value="shopping">Shopping</option>
+
+            <div class="relative w-[160px]">
+                <select id="category2" name="category" class="appearance-none w-full px-3 py-[10px] border border-gray-300 rounded-xl bg-white text-gray-700 shadow-md
+      focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 cursor-pointer">
+                    <option value="">Date</option>
+                    <option value="2025-08-01">01 Aug 2025</option>
+                    <option value="2025-08-05">05 Aug 2025</option>
+                    <option value="2025-08-12">12 Aug 2025</option>
+                    <option value="2025-08-18">18 Aug 2025</option>
+                    <option value="2025-08-25">25 Aug 2025</option>
+                    <option value="2025-08-30">30 Aug 2025</option>
+
                 </select>
+                <img src="assets/images/dropdwon.svg" alt="dropdown arrow"
+                    class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
             </div>
-            <div class="flex flex-col space-y-2 mt-[20px]">
-                  <select id="category" name="category" class="w-[130px] px-3 py-[10px]  border border-gray-300 rounded-xl bg-white text-gray-700 shadow-md
-                 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 cursor-pointer">
-                    <option value="">Category</option>
-                    <option value="food">Food</option>
-                    <option value="transportation">Transportation</option>
-                    <option value="entertainment">Entertainment</option>
-                    <option value="utilities">Utilities</option>
-                    <option value="shopping">Shopping</option>
+
+            <div class="relative w-[160px]">
+                <select id="category3" name="category" class="appearance-none w-full px-3 py-[10px] border border-gray-300 rounded-xl bg-white text-gray-700 shadow-md
+            focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 cursor-pointer">
+                    <option value="">Amount</option>
+                    <option value="25">$25</option>
+                    <option value="50">$50</option>
+                    <option value="75">$75</option>
+                    <option value="100">$100</option>
+                    <option value="150">$150</option>
+                    <option value="200">$200</option>
+                    <option value="250">$250</option>
+
                 </select>
+                <img src="assets/images/dropdwon.svg" alt="dropdown arrow"
+                    class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
             </div>
         </div>
 
+        <div class="w-full mt-[24px]">
+            <table class="w-full text-left">
+                <thead>
+                    <tr class="border border-[#E5E8EB]">
+                        <th class="font-medium text-[14px] leading-[21px] text-[#0D141C] px-[16px] py-[12px]">Date</th>
+                        <th class="font-medium text-[14px] leading-[21px] text-[#0D141C] px-[16px] py-[12px]">Category
+                        </th>
+                        <th class="font-medium text-[14px] leading-[21px] text-[#0D141C] px-[16px] py-[12px]">
+                            Description</th>
+                        <th class="font-medium text-[14px] leading-[21px] text-[#0D141C] px-[16px] py-[12px]">Amount
+                        </th>
+                        <th class="font-medium text-[14px] leading-[21px] text-[#0D141C] px-[16px] py-[12px]">Action
+                        </th>
+                    </tr>
+                <tbody>
+                    <tr class="border border-[#E5E8EB]">
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">
+                            2024-07-26</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">Food</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">Grocery
+                            shopping</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">$150</td>
+                        <td>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer">Edit</button>
+                            <span>|</span>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer hover:text">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="border border-[#E5E8EB]">
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">
+                            2024-07-25</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">Transportation</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">Gas
+                            shopping</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">$40</td>
+                        <td>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer">Edit</button>
+                            <span>|</span>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer hover:text">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="border border-[#E5E8EB]">
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">
+                            2024-07-24</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">Entertainment</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">Movie tickets</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">$30</td>
+                        <td>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer">Edit</button>
+                            <span>|</span>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer hover:text">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="border border-[#E5E8EB]">
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">
+                            2024-07-23</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">Utilities</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">Electricity bill</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">$130</td>
+                        <td>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer">Edit</button>
+                            <span>|</span>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer hover:text">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="border border-[#E5E8EB]">
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">
+                            2024-07-22</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">Shoping</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">Clothing</td>
+                        <td class="font-regular text-[14px] leading-[21px] text-[#4A709C] px-[16px] py-[25px]">$200</td>
+                        <td>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer">Edit</button>
+                            <span>|</span>
+                            <button
+                                class="font-bold text-[14px] leading-[21px] text-[#47579E] cursor-pointer hover:text">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+                </thead>
+
+
+
+
+
+
+            </table>
+        </div>
 
 
 
