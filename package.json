@@ -1,0 +1,25 @@
+{
+  "name": "exp-tracker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabeer-codes/expense-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kabeer-codes/expense-tracker/issues"
+  },
+  "homepage": "https://github.com/kabeer-codes/expense-tracker#readme",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "mysql2": "^3.14.3"
+  }
+}
